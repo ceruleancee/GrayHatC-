@@ -8,11 +8,13 @@ namespace penTest {
           Firefighter firefighter = new Firefighter("Joe Carrington", 35);
           firefighter.PensionAmount = 5000;
           PrintNameAndAge(firefighter);
-	        PrintPensionAmount(firefighter);
+          PrintPensionAmount(firefighter);
+
           firefighter.DriveToPlaceOfInterest();
           PoliceOfficer officer = new PoliceOfficer("Jane Hope", 32);
           officer.PensionAmount = 5500;
           officer.HasEmergency = true;
+
           PrintNameAndAge(officer);
           PrintPensionAmount(officer);
           officer.DriveToPlaceOfInterest();
