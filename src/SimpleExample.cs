@@ -1,7 +1,7 @@
 using System;
 
 namespace ch1_hello_world {
-    class MainClass {
+    class MainClass { 
 
         public static void Main(String[] args){
             string hello = "Hello World it's Cerulean Cee!";
