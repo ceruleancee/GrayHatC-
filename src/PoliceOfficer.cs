@@ -1,9 +1,8 @@
-public class PoliceOfficer : PublicServant, IPerson
-{
+public class PoliceOfficer : PublicServant, IPerson{
+
 	private bool _hasEmergency;
 
-	public PoliceOfficer(string name, int age)
-	{
+	public PoliceOfficer(string name, int age){
 		this.Name = name;
 		this.Age = age;
 		_hasEmergency = false;
@@ -13,18 +12,16 @@ public class PoliceOfficer : PublicServant, IPerson
 	public string Name { get; set; }
 	public int Age { get; set; }
 
-	public bool HasEmergency
-	{
+	public bool HasEmergency{
 		get { return _hasEmergency; }
 		set { _hasEmergency = value; }
 	}
 
-	public override void DriveToPlaceOfInterest()
-	{
+	public override void DriveToPlaceOfInterest(){
 		GetInPoliceCar();
-		if (this.HasEmergency)
+		if (this.HasEmergency){
 			TurnOnSiren();
-		
+		}
 		FollowDirections();
 	}
 
